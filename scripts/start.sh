@@ -43,11 +43,8 @@ echo " "
 echo "Configuring StarRupture Dedicated Server ..."
 echo " "
 
-echo "Exiting StarRupture Dedicated Server as it is not released yet..."
-exit
-
 # update env cfg data
-source /home/container/scripts/env2cfg.sh
+#source /home/container/scripts/env2cfg.sh
 
 echo " "
 echo "Launching StarRupture Dedicated Server"
@@ -55,4 +52,4 @@ echo " "
 
 # RUN
 cd "$server_files"
-xvfb-run --auto-servernum wine -nographics -batchmode $server_files/StarRuptureServerEOS.exe -Log -port=$SERVER_PORT 2>&1
+xvfb-run --auto-servernum wine $server_files/StarRuptureServerEOS.exe -Log -port=$SERVER_PORT 2>&1
