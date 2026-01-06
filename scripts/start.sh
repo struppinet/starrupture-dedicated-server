@@ -6,7 +6,7 @@ echo " "
 
 server_files="/home/container/server_files"
 echo "server path: $server_files"
-savegame_files="/home/container/.wine/drive_c/users/container/AppData/LocalLow/data"
+savegame_files="/home/container/server_files/StarRupture/Saved/SaveGames"
 echo "savegame path: $savegame_files"
 
 echo " "
