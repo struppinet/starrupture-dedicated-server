@@ -46,6 +46,7 @@ services:
       - './server:/home/container/server_files:rw'
     ports:
       - '7777:7777/udp'
+      - '7777:7777/tcp'
     restart: unless-stopped
 ```
 
