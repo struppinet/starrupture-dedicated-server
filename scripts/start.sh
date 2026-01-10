@@ -43,9 +43,6 @@ echo " "
 echo "Configuring StarRupture Dedicated Server ..."
 echo " "
 
-# silence WINE
-export WINEDEBUG=${WINEDEBUG:- -all}
-
 USE_DSSETTINGS=${USE_DSSETTINGS:-"false"}
 SERVER_PORT=${SERVER_PORT:-7777}
 echo "Using port: $SERVER_PORT"
