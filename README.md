@@ -24,7 +24,8 @@ This is a Docker container to help you get started with hosting your own [StarRu
 ```bash
 docker run -d \
     --name starrupture \
-    -p 7777:7777/udp \    
+    -p 7777:7777/udp \
+    -p 7777:7777/tcp \
     -v ./savegame:"/home/container/server_files/StarRupture/Saved/SaveGames" \
     -v ./server:"/home/container/server_files" \
     -e SERVER_PORT=7777 \
@@ -46,6 +47,7 @@ services:
       - './server:/home/container/server_files:rw'
     ports:
       - '7777:7777/udp'
+      - '7777:7777/tcp'
     restart: unless-stopped
 ```
 
